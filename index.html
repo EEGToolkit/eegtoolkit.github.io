@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EEGToolkit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>EEGToolkit</h1>
+    <p class="tagline">Open tools for neuroscience and brain signal research</p>
+  </header>
 
+  <main>
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>
+        EEGToolkit is an organization developing tools for
+        analyzing and visualizing EEG and related neurophysiological data.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://github.com/EEGToolkit/EEGVisualizer">EEGVisualizer</a> — real-time EEG plotting</li>
+        <li><a href="https://github.com/EEGToolkit/EEGPreprocess">EEGPreprocess</a> — preprocessing pipeline</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Get Involved</h2>
+      <p>
+        Visit our <a href="https://github.com/EEGToolkit">GitHub organization</a>
+        to explore projects or contribute.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> EEGToolkit • Open Neuroscience</p>
+  </footer>
+
+  <script>
+    // auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
